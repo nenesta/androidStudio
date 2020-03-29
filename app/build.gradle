@@ -28,11 +28,11 @@ Se actualiza Android studo y la app deja de funcionar
 Se agrega este codigo y el de abajo para forzar utilizar librerias antiguas
 No es la mejor solucion pero funciona
 */
-    compile 'com.android.support:appcompat-v7:27.1.0'
-    compile 'com.android.support:support-v4:27.1.0'
-    compile 'com.android.support:recyclerview-v7:27.1.0'
-    compile 'com.android.support:design:27.1.0'
-    compile 'com.android.support:cardview-v7:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:cardview-v7:27.1.0'
 // 2020-03-08 FIN
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -44,9 +44,10 @@ No es la mejor solucion pero funciona
 }
 // 2020-03-08 INI
 configurations.all {
-resolutionStrategy {
-    force 'com.android.support:support-v4:27.1.0'
-    //force 'com.android.support:support-v4:28.0.0'
-}}
+    resolutionStrategy {
+        force 'com.android.support:support-v4:27.1.0'
+        //force 'com.android.support:support-v4:28.0.0'
+    }
+}
 // 2020-03-08 FIN
 
