@@ -41,6 +41,7 @@ No es la mejor solucion pero funciona
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.+'
     testCompile 'junit:junit:4.12'
+
 }
 // 2020-03-08 INI
 configurations.all {
@@ -50,4 +51,6 @@ configurations.all {
     }
 }
 // 2020-03-08 FIN
+
+
 

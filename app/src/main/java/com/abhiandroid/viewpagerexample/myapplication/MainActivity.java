@@ -26,10 +26,16 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     private TextToSpeech tts;
 
     private int[] tabIcons = {
+     /*
             R.drawable.apple,
             R.drawable.orange,
             R.drawable.grapes,
             R.drawable.banana
+      */
+            R.drawable.n01,
+            R.drawable.n02,
+            R.drawable.n03,
+            R.drawable.n04
     };
 
     @Override
@@ -58,10 +64,16 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
     }
     private void addTabs(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+/*
         adapter.addFrag(new AppleFragment(), "MANZANA");
         adapter.addFrag(new OrangeFragment(), "NARANJA");
         adapter.addFrag(new GrapesFragment(), "UVA");
         adapter.addFrag(new BananaFragment(), "PLATANO");
+ */
+        adapter.addFrag(new AppleFragment(), "UNO");
+        adapter.addFrag(new OrangeFragment(), "DOS");
+        adapter.addFrag(new GrapesFragment(), "TRES");
+        adapter.addFrag(new BananaFragment(), "CUATRO");
         viewPager.setAdapter(adapter);
     }
 
